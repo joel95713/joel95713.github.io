@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt" data-bs-theme="">
   <head>
@@ -598,3 +599,605 @@
     </footer>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="pt" data-bs-theme="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/hover.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="m-auto w-75">
+      <div class="mt-3">
+        <div class="d-flex form-check form-switch justify-content-end ms-5">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckDefault"
+            onchange="changeTheme()"
+          />
+          <label class="form-check-label p1 ms-4" for="flexSwitchCheckDefault"
+            >Dark Mode</label
+          >
+        </div>
+
+        <script>
+          function changeTheme() {
+            const htmlThemeAttribute =
+              document.documentElement.getAttribute("data-bs-theme");
+            if (htmlThemeAttribute === "dark") {
+              document.documentElement.setAttribute("data-bs-theme", "light");
+            } else {
+              document.documentElement.setAttribute("data-bs-theme", "dark");
+            }
+          }
+        </script>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand navTitulo" href="#">Joel Lopes</a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse justify-content-end navbar-collapse"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link navCategorias hvr-underline-from-left"
+                  aria-current="page"
+                  href="#aboutme"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link navCategorias hvr-underline-from-left"
+                  href="#experience"
+                  >Experience</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link navCategorias hvr-underline-from-left"
+                  href="#projects"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link navCategorias hvr-underline-from-left"
+                  href="#contacts"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--  ID PERFIL -->
+
+      <section class="mt-5 pt-5">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <img
+                class="imgPerfil border border-3 border-light rounded-circle"
+                src="images/fotoperfil.jpg"
+                alt="fotoperfil"
+              />
+            </div>
+            <div class="align-content-center col d-grid mt-3">
+              <p id="p1">Hello, I'm</p>
+              <h1 id="h1Nome">Joel Lopes</h1>
+              <p id="p2">Full-Stack Web Developer</p>
+              <div class="d-flex gap-3 justify-content-center">
+                <a href="https://drive.google.com/file/d/1-z-WD_d_2CjuAaib6ntqQ5Fcv3ob7qk5/view?usp=drive_link" target="_blank"
+                  ><button type="button" class="btn btn-light rounded-pill">
+                    Download CV
+                  </button></a
+                >
+                <a href="#contacts">
+                  <button type="button" class="btn btn-dark rounded-pill">
+                    Contact Info
+                  </button></a
+                >
+              </div>
+              <div class="d-flex gap-3 justify-content-center mt-4">
+                <img
+                  src="images\svgs\brands\linkedin.svg"
+                  alt="My LinkedIn profile"
+                  class="icon"
+                  style="width: 32px; cursor: pointer"
+                  onclick="location.href='https://linkedin.com/in/joel-lopes-web-developer'"
+                />
+                <img
+                  src="images\svgs\brands\github.svg"
+                  alt="My Github profile"
+                  class="icon"
+                  style="width: 32px; cursor: pointer"
+                  onclick="location.href='https://github.com/joel95713'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-5 pt-5">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <p id="aboutme" class="tituloMenor">Get to Know More</p>
+              <h1 class="tituloMaior">About Me</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mt-5">
+              <img
+                src="images/fotopasse.jpg"
+                alt="fotoPerfil"
+                class="border border-light rounded-circle"
+                width="350px"
+              />
+            </div>
+            <div class="align-content-around col d-grid">
+              <div class="col d-grid d-md-flex">
+                <div class="col text-start mt-2">
+                  <h3 class="text-center my-3">Experience</h3>
+                  <h5>Academic Project Development</h5>
+                  <ul class="mt-3">
+                    <li>
+                      Implementation and design of academic projects using
+                      technologies such as HTML, CSS, and JavaScript.
+                    </li>
+                    <li>
+                      Collaboration within a team to develop innovative
+                      solutions and tackle programming challenges.
+                    </li>
+                    <li>
+                      Demonstration of problem-solving skills in overcoming
+                      technical obstacles during development.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col text-start mt-2 ms-4">
+                  <h3 class="text-center my-3">Education</h3>
+                  <h5>Bootcamp Degree in FullStack Web Development</h5>
+                  <p>CodeMaster | Escola de Código</p>
+                  <p>Study Period: 03/2023 - 12/2023</p>
+                  <ul class="mt-3">
+                    <li>
+                      Key courses included: Web Development, Object-Oriented
+                      Programming, User Interface Design.
+                    </li>
+                    <li>
+                      Participation in practical projects, gaining experience in
+                      real development environments.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col mt-2 text-start">
+                👋 Greetings! I'm Joel Lopes, a passionate Junior Full-stack Web
+                Development. 🖥️ I'm fascination with history, technology, and
+                physics enriches my creative approach to projects. And, as a
+                cinema lover, I appreciate visual narratives as much as code
+                narratives. 🛠️ My toolkit includes HTML, CSS, JavaScript, Java,
+                PHP and MySQL enabling me to build attractive and functional
+                interfaces. 🎓 Education: Full-Stack Web Development Course
+                (2023) 🌱 I'm excited to connect with like-minded individuals,
+                share knowledge, and collaborate on projects that make a
+                difference. Let's blend passions and skills!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-end me-5 mt-5">
+          <img
+            src="images/svgs/solid/arrow-down.svg"
+            alt="Arrow icon"
+            class="icon arrow"
+            style="width: 32px; cursor: pointer"
+            onclick="location.href='#experience'"
+          />
+        </div>
+      </section>
+
+      <section class="mt-5 pt-5">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <p id="experience" class="tituloMenor">Explore My</p>
+              <h1 class="tituloMaior">Experience</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col shadow p-5 rounded-5 m-3">
+              <div class="subTitulo">Frontend Development</div>
+              <div
+                class="d-flex text-start flex-wrap justify-content-between mt-5"
+              >
+                <div class="d-flex m-4">
+                  <div class="me-4">
+                    <img
+                      src="images/svgs/solid/check-to-slot.svg"
+                      style="width: 32px"
+                      alt="check-to-slot"
+                    />
+                  </div>
+                  <div class="">
+                    <h2>HTML</h2>
+                    <h3>Experienced</h3>
+                  </div>
+                </div>
+                <div class="d-flex m-4">
+                  <div class="me-4">
+                    <img
+                      src="images/svgs/solid/check-to-slot.svg"
+                      style="width: 32px"
+                      alt="check-to-slot"
+                    />
+                  </div>
+                  <div class="">
+                    <h2>CSS</h2>
+                    <h3>Experienced</h3>
+                  </div>
+                </div>
+                <div class="d-flex m-4">
+                  <div class="me-4">
+                    <img
+                      src="images/svgs/solid/check-to-slot.svg"
+                      style="width: 32px"
+                      alt="check-to-slot"
+                    />
+                  </div>
+                  <div class="">
+                    <h2>JavaScript</h2>
+                    <h3>Basic</h3>
+                  </div>
+                </div>
+                <div class="d-flex m-4">
+                  <div class="me-4">
+                    <img
+                      src="images/svgs/solid/check-to-slot.svg"
+                      style="width: 32px"
+                      alt="check-to-slot"
+                    />
+                  </div>
+                  <div class="">
+                    <h2>Bootstrap</h2>
+                    <h3>Intermediate</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shadow col p-5 rounded-5 m-3">
+              <div class="subTitulo">Backend Development</div>
+              <div
+                class="d-flex text-start flex-wrap justify-content-between mt-5"
+              >
+                <div class="d-flex m-4">
+                  <div class="me-4">
+                    <img
+                      src="images/svgs/solid/check-to-slot.svg"
+                      style="width: 32px"
+                      alt="check-to-slot"
+                    />
+                  </div>
+                  <div class="">
+                    <h2>Java</h2>
+                    <h3>Basic</h3>
+                  </div>
+                </div>
+                <div class="d-flex m-4">
+                  <div class="me-4">
+                    <img
+                      src="images/svgs/solid/check-to-slot.svg"
+                      style="width: 32px"
+                      alt="check-to-slot"
+                    />
+                  </div>
+                  <div class="">
+                    <h2>PHP</h2>
+                    <h3>Intermediate</h3>
+                  </div>
+                </div>
+                <div class="d-flex m-4">
+                  <div class="me-4">
+                    <img
+                      src="images/svgs/solid/check-to-slot.svg"
+                      style="width: 32px"
+                      alt="check-to-slot"
+                    />
+                  </div>
+                  <div class="">
+                    <h2>MySQL</h2>
+                    <h3>Intermediate</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-end me-5 mt-5">
+          <img
+            src="images/svgs/solid/arrow-down.svg"
+            alt="Arrow icon"
+            class="icon arrow"
+            style="width: 32px; cursor: pointer"
+            onclick="location.href='#projects'"
+          />
+        </div>
+      </section>
+
+      <section class="mt-5 pt-5">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <p id="projects" class="tituloMenor">Browse My Recent</p>
+              <h1 class="tituloMaior">Projects</h1>
+            </div>
+          </div>
+
+        <!--   Projects -->
+
+          <div class="row justify-content-center">
+            <div class="col-md-3 shadow p-5 rounded-5 m-3">
+              <div>
+                <img
+                  class="shadow rounded-5 hvr-grow-shadow"
+                  src="images/sebastiao/home.PNG"
+                  style="width: 100%; object-fit: fill"
+                  alt="projecto1"
+                />
+              </div>
+              <div class="subTitulo mt-3">Sebastião Alves</div>
+              <div class="">
+                <a
+                  href="https://github.com/joel95713/sebastiao_alves"
+                  target="”_blank”"
+                  ><button
+                    type="button"
+                    class="btn btn-light hvr-rectangle-out"
+                  >
+                    Github
+                  </button></a
+                >
+
+                <a href="https://sebastiaoalves.com/" target="”_blank”"
+                  ><button
+                    type="button"
+                    class="btn btn-light hvr-rectangle-out"
+                  >
+                    Live Demo
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="col-md-3 shadow p-5 rounded-5 m-3">
+              <div>
+                <img
+                  class="shadow rounded-5 hvr-grow-shadow"
+                  src="images/ricardowebfolio/1.PNG"
+                  style="width: 100%; object-fit: fill"
+                  alt="projecto1"
+                />
+              </div>
+              <div class="subTitulo mt-3">Ricardo Sequeira - webfolio</div>
+              <div>
+                <a
+                  href="https://github.com/joel95713/ricardosequeira_webfolio"
+                  target="”_blank”"
+                  ><button
+                    type="button"
+                    class="btn btn-light hvr-rectangle-out"
+                  >
+                    Github
+                  </button></a
+                >
+                <a
+                  href="https://joel95713.github.io/ricardosequeira_webfolio"
+                  target="”_blank”"
+                  ><button
+                    type="button"
+                    class="btn btn-light hvr-rectangle-out"
+                  >
+                    Live Demo
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="col-md-3 shadow p-5 rounded-5 m-3">
+              <div>
+                <img
+                  class="shadow rounded-5 hvr-grow-shadow"
+                  src="images/wellgo/1.PNG"
+                  style="width: 100%; object-fit: fill"
+                  alt="projecto1"
+                />
+              </div>
+              <div class="subTitulo mt-3">
+                WellGo+
+                <span style="font-size: smaller"
+                  ><br />..under development..</span
+                >
+              </div>
+              <div>
+                <a href="https://github.com/joel95713/wellgo"target="”_blank”"><button type="button" class="btn btn-light hvr-rectangle-out">
+                  Github
+                </button></a>
+                <a href="https://joel95713.github.io/wellgo/" target="”_blank”"><button type="button" class="btn btn-light hvr-rectangle-out">
+                  Live Demo
+                </button></a>
+                
+              </div>
+            </div>
+            <div class="col-md-3 shadow p-5 rounded-5 m-3">
+              <div>
+                <img
+                  class="shadow rounded-5 hvr-grow-shadow"
+                  src="images/google/1.PNG"
+                  style="width: 100%; object-fit: fill"
+                  alt="projecto1"
+                />
+              </div>
+              <div class="subTitulo mt-3">
+                Google-clone
+              </div>
+              <div>
+                <a href="https://github.com/joel95713/google-Clone" target="”_blank”"><button type="button" class="btn btn-light hvr-rectangle-out">
+                  Github
+                </button></a>
+                <a href="https://joel95713.github.io/google-clone/"target="”_blank”"><button type="button" class="btn btn-light hvr-rectangle-out">
+                  Live Demo
+                </button></a>     
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!--   Contact me -->
+
+        <div class="text-end me-5 mt-5">
+          <img
+            src="images/svgs/solid/arrow-down.svg"
+            alt="Arrow icon"
+            class="icon arrow"
+            style="width: 32px; cursor: pointer"
+            onclick="location.href='#contacts'"
+          />
+        </div>
+      </section>
+      <section class="mt-5 pt-5">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <p id="contacts" class="tituloMenor">Get in Touch</p>
+              <h1 class="tituloMaior">Contact Me</h1>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div
+              class="shadow d-flex flex-wrap justify-content-center m-auto p-3 rounded-5 w-50"
+            >
+              <div class="m-3">
+                <img
+                  src="images/svgs/solid/envelope.svg"
+                  style="width: 32px"
+                  alt="email"
+                  class="me-3"
+                />
+                <span
+                  ><a
+                    class="text-dark-emphasis link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-25-hover"
+                    href="mailto:joel95713@gmail.com"
+                    >joel95713@gmail.com</a
+                  ></span
+                >
+              </div>
+              <div class="m-3">
+                <img
+                  src="images/svgs/brands/linkedin.svg"
+                  style="width: 32px"
+                  alt="linkedin"
+                  class="me-3"
+                />
+                <span
+                  ><a
+                    class="text-dark-emphasis link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-25-hover"
+                    href="https://www.linkedin.com/in/joel-lopes-web-developer/"
+                    >Linkedin</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-5">
+      <div>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid mx-5">
+            <div
+              class="collapse justify-content-center navbar-collapse"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link navCategorias hvr-underline-from-left"
+                    aria-current="page"
+                    href="#aboutme"
+                    >About Me</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link navCategorias hvr-underline-from-left"
+                    href="#experience"
+                    >Experience</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link navCategorias hvr-underline-from-left"
+                    href="#projects"
+                    >Projects</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link navCategorias hvr-underline-from-left"
+                    href="#contacts"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container text-center my-5">
+        <div class="row">
+          <div class="col">
+            <p>Copyright © 2023 Joel Lopes. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+>>>>>>> a16789e84eb40210a2d046f88fbf65b97bd30a14
